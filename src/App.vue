@@ -3,12 +3,12 @@
     <div class="header-cover static" v-if="visible">
         <div class="relative w-full bg-no-repeat bg-cover lg:bg-center bg-bottom sm:bg-center bg__height" v-bind:style="{ backgroundImage:'url(' + imgPath2 + ')' }" v-if="visible">
             <div class="absolute right-0 left-0 mx-auto sm:px-6 md:bottom-20 lg:px-8 py-10">
-                 <h2 class="text-center sm:text-3xl text-[#fff]">
+                 <h2 class="text-center sm:text-3xl text-[#fff] ">
                     <span class="block judul">The Wedding Of</span>
                     <span class="block waterfall">Yulia & Andri</span>
                 </h2>
             </div>
-            <div class="absolute -bottom-5 right-0 left-0  back_waves">
+            <div class="absolute lg:-bottom-4 sm:-bottom-1 right-0 left-0  back_waves">
               <svg class="w-full" viewBox="0 0 190 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M47.5 0C95 0 95 5.4 142.5 5.4C166.25 5.4 178.125 4.05 190 2.7V7.2H0V2.7C11.875 1.35 23.75 0 47.5 0Z" fill="#2A2C21"/>
               </svg>
@@ -17,7 +17,7 @@
       <section class="relative w-full h-screen lg:h-3/4" style="background-color: #2A2C21;">
           <div class="py-20">
             <div class="mx-auto mb-3">
-              <img src="@/assets/logo1.png" alt="" class="mx-auto w-1/4 col-span-2" srcset="">
+              <img src="@/assets/logo1.png" alt="" class="mx-auto w-1/4 col-span-2 sm:w-1/2 sm:pb-14" srcset="">
               <h2 class="text-center sm:text-4xl text-[#fff]">
                     <span class="block waterfall_satu">We Tied The Knot!</span>
                     <p class="text-xs leading-relaxed mt-3 heading-5">Kami hanya ingin menghabiskan Tiga Waktu Bersama, Sekarang, Selalu dan Selamanya.</p>
@@ -25,7 +25,7 @@
             </div>
             <img  data-aos="zoom-in"  src="@/assets/bag-3.jpg" class="lg:w-3/12 lg:h-4/5 w-60 bg-cover bg-no-repeat mx-auto rounded-3xl border-4 border-white shadow-lg" alt="" srcset="">
           </div>
-      <svg class="w-full absolute    -bottom-4 right-0 left-0" viewBox="0 0 190 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <svg class="w-full absolute -bottom-4 lg:-bottom-4 sm:-bottom-1 right-0 left-0" viewBox="0 0 190 8" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M47.5 0C95 0 95 5.4 142.5 5.4C166.25 5.4 178.125 4.05 190 2.7V7.2H0V2.7C11.875 1.35 23.75 0 47.5 0Z" fill="#CAD1C2"/>
       </svg>
       </section>
@@ -68,7 +68,7 @@
           </div>
       </section>
       <section class="w-full h-4/5 lg:bg-screen bg-dua relative">
-      <svg class="w-full absolute lg:-top-12 -top-1  right-0 left-0" viewBox="0 0 190 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <svg class="w-full absolute lg:-top-12 sm:-top-5 right-0 left-0" viewBox="0 0 190 8" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M47.5 0C95 0 95 5.4 142.5 5.4C166.25 5.4 178.125 4.05 190 2.7V7.2H0V2.7C11.875 1.35 23.75 0 47.5 0Z" fill="#CAD1C2"/>
       </svg>
            <div class="p-16">
@@ -96,8 +96,8 @@
                 </div>
           </div>
       </section>
-      <section class="w-full bg-satu-dua  lg:max-h-full relative" style="height: 300vh">
-        <svg class="w-full absolute -top-4  right-0 left-0" viewBox="0 0 221 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <section class="w-full bg-satu-dua lg:max-h-full sm:h-auto relative">
+        <svg class="w-full absolute -top-4 lg:-top-4 sm:-top-1 right-0 left-0" viewBox="0 0 221 8" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M55.25 1.8C27.625 1.8 13.8125 3.15 0 4.5V0H221V4.5C207.188 5.85 193.375 7.2 165.75 7.2C110.5 7.2 110.5 1.8 55.25 1.8Z" fill="#CAD1C2"/>
         </svg>
           <div class="p-20 ">
@@ -143,24 +143,44 @@
                         </div>
                 </div>
           </div>
-          <svg class="w-full absolute -bottom-4 right-0 left-0" viewBox="0 0 190 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg class="w-full absolute -bottom-4 lg:-bottom-4 sm:-bottom-1 right-0 left-0" viewBox="0 0 190 8" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M47.5 0C95 0 95 5.4 142.5 5.4C166.25 5.4 178.125 4.05 190 2.7V7.2H0V2.7C11.875 1.35 23.75 0 47.5 0Z" fill="#CAD1C2"/>
           </svg>
       </section>
-      <section class="w-full bg-dua max-h-screen  min-h-screen  relative" style="height: 200vh">
+      <section class="w-full bg-dua  relative" >
               <div class="p-10">
-                  <!--Card 1-->
-                  <div class="w-1/2 lg:w-3/5 lg:flex mx-auto h-80 card-satu" data-aos="flip-left" data-aos-delay="200">
-                    <div class=" lg:w-1/2 flex-none bg-cover bg-center lg:rounded-l-3xl text-center " v-bind:style="{ backgroundImage:'url(' + imgPath2 + ')' }" title="Mountain">
-                    </div>
-                    <div class="border-r border-b border-l border-gray-400 lg:rounded-r-3xl bg-white  p-4 flex flex-col justify-center leading-normal">
-                      <div class="mb-8 text-center">
-                        <span class="nama__font_dua_tiga text-gray-700 text-center">Menuju Hari Bahagia</span>
-                        <p class="text-gray-700 text-sm leading-6 text-center mt-4">Waktu berganti begitu cepat, dalam penantian kami yang penuh doa, kami berharap kehadiran secara daring dan doa restu seluruh keluarga, sahabat dan saudara terkasih, untuk menjadi saksi ikrar janji suci kami di hari bahagia</p>
+                    <div class="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-7xl">
+                      <div class="md:flex">
+                        <div class="md:shrink-0">
+                          <div class="h-screen w-full object-cover lg:h-full md:h-2/3 md:w-96 bg-cover bg-center bg-no-repeat" style="height:450px; width:700px" v-bind:style="{ backgroundImage:'url(' + imgPath2 + ')' }" alt="Man looking at item at a store"></div>
+                        </div>
+                        <div class="p-8">
+                            <div class="mb-8 text-center">
+                              <span class="nama__font_dua_tiga text-gray-700 text-center">Menuju Hari Bahagia</span>
+                              <p class="text-gray-700 text-sm leading-6 text-center mt-4">Waktu berganti begitu cepat, dalam penantian kami yang penuh doa, kami berharap kehadiran secara daring dan doa restu seluruh keluarga, sahabat dan saudara terkasih, untuk menjadi saksi ikrar janji suci kami di hari bahagia</p>
+                              <div class="flex justify-center mt-20">
+                                <div>
+                                  <h4 class="text-gray-200 text-5xl flex mr-4">000 <p class="ml-2"> : </p> </h4>
+                                  <p class="text-gray-200 text-sm">Day(s)</p>
+                                </div>
+                                <div>
+                                  <h4 class="text-gray-200 text-5xl flex mr-4">00 <p class="ml-2"> : </p> </h4>
+                                  <p class="text-gray-200 text-sm">Hour(s)</p>
+                                </div>
+                                <div>
+                                  <h4 class="text-gray-200 text-5xl flex mr-4">00 <p class="ml-2"> : </p> </h4>
+                                 <p class="text-gray-200 text-sm">Minute(s)</p>
+                                </div>
+                                <div>
+                                  <h4 class="text-gray-200 text-5xl flex mr-4">00 <p class="ml-2"> </p> </h4>
+                                  <p class="text-gray-200 text-sm">Second(s)</p>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                </div>
+              </div>
       </section>
       <section class="w-full h-auto bg-tiga-empat relative">
           <svg class="w-full absolute right-0 left-0" viewBox="0 0 221 8" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -223,8 +243,8 @@
                             yang ingin mengirimkan hadiah, <br>
                             silahkan mengirimkannya melalui :
                           </p>
-                          <div class="p-5">
-                          <button class="bg-gray-50 text-black text-sm py-2 px-28 rounded-full ">
+                          <div class="lg:p-5 sm:mb-3">
+                          <button class="bg-gray-50 text-black text-sm py-2 px-28 rounded-full sm:text-center">
                               <p class="text-black"> Tranfer</p>
                           </button>
                           </div>
@@ -233,7 +253,7 @@
                           </button>
                     </div>
                 </div>
-                          <svg class="w-full absolute -bottom-4 right-0 left-0" viewBox="0 0 190 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <svg class="w-full absolute -bottom-4 lg:-bottom-4 sm:-bottom-2 right-0 left-0" viewBox="0 0 190 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path d="M47.5 0C95 0 95 5.4 142.5 5.4C166.25 5.4 178.125 4.05 190 2.7V7.2H0V2.7C11.875 1.35 23.75 0 47.5 0Z" fill="#CAD1C2"/>
                       </svg>
           </div>
@@ -241,7 +261,7 @@
       <section class="w-full bg-dua h-auto relative">
               <div class="mx-auto text-center">
                 
-                        <span class="dancing text-gray-900  text-6xl text-center" data-aos="zoom-in" data-aos-delay="900">Our Gallery</span>
+                        <span class="dancing text-gray-900 text-6xl text-center " data-aos="zoom-in" data-aos-delay="900">Our Gallery</span>
                         <p class="text-sm pt-3" data-aos="zoom-in" data-aos-delay="900">"Every Love Story is Beautiful, but Ours is My Favourite"</p>
                   
                        <div class="container mx-auto flex flex-wrap pt-4 pb-12">
@@ -261,7 +281,7 @@
 
 
 
-                          <div class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink" data-aos="zoom-in" data-aos-delay="900">
+                          <div class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink" style="height:600px;" data-aos="zoom-in" data-aos-delay="900">
                             <div class="flex-1 bg-white overflow-hidden w-10/12 mx-auto shadow bg-cover bg-no-repeat bg-bottom rounded-3xl "  v-bind:style="{ backgroundImage:'url(' + imgPath + ')' }">
                             
                               <a href="#" class="flex flex-wrap no-underline hover:no-underline">
@@ -273,7 +293,7 @@
 
 
 
-                          <div class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink" data-aos="zoom-in" data-aos-delay="900">
+                          <div class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink" style="height:600px;" data-aos="zoom-in" data-aos-delay="900">
                             <div class="flex-1 bg-white overflow-hidden w-10/12 mx-auto shadow bg-cover bg-no-repeat bg-bottom rounded-3xl "  v-bind:style="{ backgroundImage:'url(' + imgPath + ')' }">
                            
                                 
@@ -285,15 +305,15 @@
                         </div>
               </div>
       </section>
-      <section class="w-full h-screen bg-tiga-empat relative bg-cover bg-no-repeat bg-bottom rounded-3xl" v-bind:style="{ backgroundImage:'url(' + imgPath + ')' }">
-         <svg class="w-full absolute right-0 left-0" viewBox="0 0 221 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <section class="w-full h-screen bg-tiga-empat relative bg-cover bg-no-repeat bg-bottom" v-bind:style="{ backgroundImage:'url(' + imgPath + ')' }">
+         <svg class="w-full absolute sm:-top-1 right-0 left-0" viewBox="0 0 221 8" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M55.25 1.8C27.625 1.8 13.8125 3.15 0 4.5V0H221V4.5C207.188 5.85 193.375 7.2 165.75 7.2C110.5 7.2 110.5 1.8 55.25 1.8Z" fill="#CAD1C2"/>
           </svg>
           
       </section>
        <section class="w-full h-screen relative"  style="background-color: #1C1C1C;">
          
-          <svg class="w-full absolute -top-10 right-0 left-0" viewBox="0 0 190 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg class="w-full absolute -top-10 lg:-top-10 sm:-top-4 right-0 left-0" viewBox="0 0 190 8" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M47.5 0C95 0 95 5.4 142.5 5.4C166.25 5.4 178.125 4.05 190 2.7V7.2H0V2.7C11.875 1.35 23.75 0 47.5 0Z" fill="#1C1C1C"/>
           </svg>
           <img src="@/assets/log.png" class="w-3/12 mx-auto pt-24" alt="" srcset="" data-aos="zoom-in" data-aos-delay="1000">
@@ -464,7 +484,7 @@ export default {
   }
   .bg-satu-dua{
     background-color: #2A2C21;
-    height: 1250px;
+    /* height: 1250px; */
   }
   .bg-dua{
     background-color: #CAD1C2;
