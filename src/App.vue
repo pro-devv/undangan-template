@@ -1,11 +1,11 @@
 <template>
   <div id="app" class="">
     <div class="header-cover static" v-if="visible">
-        <div class="relative w-full bg-no-repeat bg-cover lg:bg-center sm:bg-center bg__height" v-bind:style="{ backgroundImage:'url(' + imgPath2 + ')' }" v-if="visible">
-            <div class="absolute bottom-36 right-0 left-0 mx-auto sm:px-6 lg:py-16 lg:px-8 lg:flex lg:items-center lg:justify-center">
-                 <h2 class="text-center sm:text-4xl text-[#fff]">
+        <div class="relative w-full bg-no-repeat bg-cover lg:bg-center bg-bottom sm:bg-center bg__height" v-bind:style="{ backgroundImage:'url(' + imgPath2 + ')' }" v-if="visible">
+            <div class="absolute right-0 left-0 mx-auto sm:px-6 md:bottom-20 lg:px-8 py-10">
+                 <h2 class="text-center sm:text-3xl text-[#fff]">
                     <span class="block judul">The Wedding Of</span>
-                    <span class="block py-2 waterfall">Yulia & Andri</span>
+                    <span class="block waterfall">Yulia & Andri</span>
                 </h2>
             </div>
             <div class="absolute -bottom-5 right-0 left-0  back_waves">
@@ -14,23 +14,23 @@
               </svg>
             </div>
         </div>
-      <section class="relative w-full h-screen bg-satu">
+      <section class="relative w-full h-screen lg:h-3/4" style="background-color: #2A2C21;">
           <div class="py-20">
             <div class="mx-auto mb-3">
               <img src="@/assets/logo1.png" alt="" class="mx-auto w-1/4 col-span-2" srcset="">
               <h2 class="text-center sm:text-4xl text-[#fff]">
                     <span class="block waterfall_satu">We Tied The Knot!</span>
-                    <p class="text-xl mt-3 heading-5">Kami hanya ingin menghabiskan Tiga Waktu Bersama, Sekarang, Selalu dan Selamanya.</p>
+                    <p class="text-xs leading-relaxed mt-3 heading-5">Kami hanya ingin menghabiskan Tiga Waktu Bersama, Sekarang, Selalu dan Selamanya.</p>
               </h2>
             </div>
-            <img  data-aos="zoom-in"  src="@/assets/bag-3.jpg" class="lg:w-3/12 lg:h-4/5 sm:w-1/2 bg-cover bg-no-repeat mx-auto rounded-3xl border-4 border-white shadow-lg" alt="" srcset="">
+            <img  data-aos="zoom-in"  src="@/assets/bag-3.jpg" class="lg:w-3/12 lg:h-4/5 w-60 bg-cover bg-no-repeat mx-auto rounded-3xl border-4 border-white shadow-lg" alt="" srcset="">
           </div>
-      <svg class="w-full absolute -bottom-4 right-0 left-0" viewBox="0 0 190 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <svg class="w-full absolute    -bottom-4 right-0 left-0" viewBox="0 0 190 8" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M47.5 0C95 0 95 5.4 142.5 5.4C166.25 5.4 178.125 4.05 190 2.7V7.2H0V2.7C11.875 1.35 23.75 0 47.5 0Z" fill="#CAD1C2"/>
       </svg>
       </section>
 
-      <section class="w-full h-44 bg-dua">
+      <section class="w-full h-44  bg-dua">
           <div class="p-16">
               <h2 class="text-center sm:text-4xl text-[#fff] ">
                     <span class="nama__font_satu"  data-aos="zoom-in" data-aos-delay="600">Kedua Mempelai</span>
@@ -41,7 +41,7 @@
         <path d="M55.25 1.8C27.625 1.8 13.8125 3.15 0 4.5V0H221V4.5C207.188 5.85 193.375 7.2 165.75 7.2C110.5 7.2 110.5 1.8 55.25 1.8Z" fill="#CAD1C2"/>
       </svg>
 
-      <section class="w-full h-screen bg-tiga">
+      <section class="w-full h-5/6 lg:h-screen  bg-tiga">
           <div class="p-16">
                 <div class="flex flex-col sm:flex-row justify-center pt-12 my-12 sm:my-4">
                   <div class="flex flex-col w-5/6 lg:w-2/5 mx-auto lg:mx-0 rounded-none lg:rounded-l-lg mt-9">
@@ -67,8 +67,8 @@
                 </div>
           </div>
       </section>
-      <section class="w-full h-screen bg-dua relative">
-      <svg class="w-full absolute -top-16 right-0 left-0" viewBox="0 0 190 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <section class="w-full h-4/5 lg:bg-screen bg-dua relative">
+      <svg class="w-full absolute lg:-top-12 -top-1  right-0 left-0" viewBox="0 0 190 8" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M47.5 0C95 0 95 5.4 142.5 5.4C166.25 5.4 178.125 4.05 190 2.7V7.2H0V2.7C11.875 1.35 23.75 0 47.5 0Z" fill="#CAD1C2"/>
       </svg>
            <div class="p-16">
@@ -96,15 +96,15 @@
                 </div>
           </div>
       </section>
-      <section class="w-full bg-satu-dua relative">
-        <svg class="w-full absolute -top-4 right-0 left-0" viewBox="0 0 221 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <section class="w-full bg-satu-dua  lg:max-h-full relative" style="height: 300vh">
+        <svg class="w-full absolute -top-4  right-0 left-0" viewBox="0 0 221 8" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M55.25 1.8C27.625 1.8 13.8125 3.15 0 4.5V0H221V4.5C207.188 5.85 193.375 7.2 165.75 7.2C110.5 7.2 110.5 1.8 55.25 1.8Z" fill="#CAD1C2"/>
         </svg>
-          <div class="p-20">
+          <div class="p-20 ">
                 <div class="flex flex-col sm:flex-row justify-center pt-20 my-12 sm:my-4" >
                       <div class="flex flex-col h-auto bg-no-repeat bg-cover bg-center w-10/12 lg:w-7/12 mx-auto lg:mx-0 rounded-lg mt-4 sm:-mt-6 shadow-lg z-10" v-bind:style="{ backgroundImage:'url(' + imgPath3 + ')' }" data-aos="flip-left" data-aos-delay="200" >
                             <h2 class="text-center sm:text-4xl text-[#fff] p-10">
-                              <p class="text-sm text-white mb-10 ">Dengan mengucap syukur atas kebaikan Tuhan Yang Maha Kuasa dan dengan segenap kerendahan hati, tanpa mengurangi rasa hormat. Kami mohon doa dan restu dari Bapak/Ibu/Saudara/i untuk hadir dihari bahagia Pernikahan kami yang akan dilaksanakan pada :
+                              <p class="text-xs text-white mb-10 ">Dengan mengucap syukur atas kebaikan Tuhan Yang Maha Kuasa dan dengan segenap kerendahan hati, tanpa mengurangi rasa hormat. Kami mohon doa dan restu dari Bapak/Ibu/Saudara/i untuk hadir dihari bahagia Pernikahan kami yang akan dilaksanakan pada :
                               </p>
                               <img src="@/assets/icon.png" class="w-40 mx-auto" alt="" srcset="">
                             </h2>
@@ -147,11 +147,11 @@
               <path d="M47.5 0C95 0 95 5.4 142.5 5.4C166.25 5.4 178.125 4.05 190 2.7V7.2H0V2.7C11.875 1.35 23.75 0 47.5 0Z" fill="#CAD1C2"/>
           </svg>
       </section>
-      <section class="w-full bg-dua h-auto relative">
+      <section class="w-full bg-dua max-h-screen  min-h-screen  relative" style="height: 200vh">
               <div class="p-10">
                   <!--Card 1-->
                   <div class="w-1/2 lg:w-3/5 lg:flex mx-auto h-80 card-satu" data-aos="flip-left" data-aos-delay="200">
-                    <div class=" lg:w-1/2 flex-none bg-cover bg-center lg:rounded-l-3xl text-center overflow-hidden" v-bind:style="{ backgroundImage:'url(' + imgPath2 + ')' }" title="Mountain">
+                    <div class=" lg:w-1/2 flex-none bg-cover bg-center lg:rounded-l-3xl text-center " v-bind:style="{ backgroundImage:'url(' + imgPath2 + ')' }" title="Mountain">
                     </div>
                     <div class="border-r border-b border-l border-gray-400 lg:rounded-r-3xl bg-white  p-4 flex flex-col justify-center leading-normal">
                       <div class="mb-8 text-center">
@@ -364,6 +364,9 @@ export default {
   @import url('https://fonts.googleapis.com/css2?family=ABeeZee&family=Dancing+Script&family=Karla&family=Quicksand:wght@400;500&family=Waterfall&display=swap');
   .header-cover{
     color: #fff;
+  }
+  .bg___height{
+    height: 380vh
   }
   .judul{
     font-family: 'Times New Roman', Times, serif;
